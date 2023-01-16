@@ -1,0 +1,30 @@
+body{
+    display: grid;
+    grid-template-areas:  
+    "a b"  
+    "c d";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1 1fr);
+    /* grid-template-columns: 2fr 1fr;  */
+    }
+
+section#a{
+background-color: aqua;
+grid-area:a;
+}
+
+section#b{
+background-color: yellowgreen;
+grid-area:b;
+}
+
+
+section#c{
+    background-color: red;
+    grid-area:c;
+    }
+    
+section#d{
+    background-color: brown;
+    grid-area:d;
+    }
