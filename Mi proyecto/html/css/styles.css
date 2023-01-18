@@ -22,13 +22,11 @@
       "opinion opinion"
       "contacto contacto"
       ;
-      /* grid-template: 100px calc(100vh - 200px) 100px / 1fr 1fr; */
-      /* grid-template-rows: repeat(6 2fr);
-      grid-template-columns: 1fr 1fr;  */
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(1 1fr);
       }
     }
+
  /*Estilos de los titulos*/
 
  h2 {
@@ -52,20 +50,36 @@
   align-items: center;
  }
 
+/*Estilos del menu*/
+
 nav li a {
   text-decoration: none;
-  color: rgb(162, 59, 172);
+  color: rgb(0, 0, 0);
+  transition: all .5s;
+ 
+}
+.padreli {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: rgb(207, 135, 201);
+    padding: .5rem;
+}
 
+@media screen and (min-width: 768px){
+nav li a:hover{
+  background-color: rgb(128, 190, 226);
+  border-radius: 5%;
+}
 }
 
 li {
   list-style: none;
  }
-  @media screen and (min-width: 768px){
-    li {
-      display: inline;
-     }
- }
+ 
 
 /*Estilos Historia*/
 
@@ -99,7 +113,7 @@ li {
 
  }
 
- @media screen and (min-width: 500px){
+ @media screen and (min-width: 768px){
   .contenedor-de-articulos {
   grid-template-columns: repeat(2, 1fr);
   }
@@ -134,6 +148,10 @@ li {
     text-align: center;
   }
 
+  .pdefotos {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  }
+
   .cardfotos {
     padding: 0 0.5rem;
   }
@@ -144,12 +162,15 @@ li {
       
     }
   }
+
  /*Estilos Opinion*/
 
  #opinion {
   grid-area: opinion;
-  background-color:rgb(162, 210, 255)
+  background-color:rgb(162, 210, 255);
+ 
  }
+
  form {
   display:flex;
   flex-direction: column;
@@ -167,8 +188,7 @@ form textarea {
 form .submit-button {
   max-width: 5rem;
 }
-
-
+    
  /*Footer*/
 
  #contacto {
