@@ -13,115 +13,36 @@
 
 <body id="bodyengrid">
 
-    <header id="header">
-    
-        <h1  >Bienvenid@s a RodJad</h1>
-        <img class="logo" src="./img/logo.png" alt="">
-    
-        <nav class="menunavv">
-            <ul class="padreli">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li><a href="pages/nuestrahistoria.html">Nuestra Historia</a></li>
-                <li><a href="pages/producto.html">Productos</a></li>
-                <li>
-                    <a href="pages/galeriadeimagenes.html">Galeria de Imagenes</a>
-                </li>
-                <li><a href="pages/dejanostuopinion.html">Dejanos tu opinion</a></li>
-            </ul>
-        </nav>
+    <header id="header" class=" bienvenida">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Bienvenidos a RodJad</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/producto.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/nuestrahistoria.html">Nuestra Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/galeriadeimagenes.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/dejanostuopinion.html">Déjanos tu opinión</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <button class="btn btn-primary boton" type="button">Hace tu pedido aquí</button>
     </header>
-
-
-    <section id="historia">
-        <h2>Nuestra Historia</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis necessitatibus voluptatibus et itaque
-            nostrum, maiores quibusdam earum nulla tempora cupiditate molestias nesciunt veniam a iste voluptatum
-            doloremque asperiores. Vitae, neque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis necessitatibus voluptatibus et itaque
-            nostrum, maiores quibusdam earum nulla tempora cupiditate molestias nesciunt veniam a iste voluptatum
-            doloremque asperiores. Vitae, neque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis necessitatibus voluptatibus et itaque
-            nostrum, maiores quibusdam earum nulla tempora cupiditate molestias nesciunt veniam a iste voluptatum
-            doloremque asperiores. Vitae, neque.</p>
-    </section>
-
-
-    <section id="productos">
-
-        <h2>Productos</h2>
-        <div class="contenedor-de-articulos">
-            <article class="imgproductos">
-                <img src="./img/marquise.jfif" alt="marquise">
-                <h4>Marquise</h4>
-                <span>$ 4300</span>
-
-                <button class="boton">Comprar</button>
-            </article>
-
-            <article class="imgproductos">
-                <img src="./img/lemonpie.jfif" alt="lemon">
-                <h4>Lemon Pie</h4>
-                <span>$ 3250</span>
-                <button class="boton">Comprar</button>
-            </article>
-
-            <article class="imgproductos">
-                <img src="./img/havvanet.jfif" alt="havannet">
-                <h4>Havvanet</h4>
-                <span>$ 3000</span>
-                <button class="boton">Comprar</button>
-            </article>
-
-            <article class="imgproductos">
-                <img src="./img/chescakeddl.jfif" alt="cddl">
-
-                <h4>Cheesecake de ddl</h4>
-                <span>$ 3340</span>
-                <button class="boton">Comprar</button>
-            </article>
-        </div>
-    </section>
-
-
-
-    <section id="galeria">
-        <h2>Galeria de Imagenes</h2>
-        <div class="fotos">
-            <div class="cardfotos">
-                <img src="./img/img3.jfif" alt="">
-                <p class="pdefotos"> Elegimos cuidadosamente nuestra materia prima </p>
-            </div>
-            <div class="cardfotos">
-                <img src="./img/img2.jfif" alt="">
-                <p class="pdefotos">Nuestros productos son frescos</p>
-            </div>
-            <div class="cardfotos">
-                <img src="./img/img4.jfif" alt="">
-                <p class="pdefotos">Preparados exclusivamente para cada cliente</p>
-            </div>
-            <div class="cardfotos">
-                <img src="./img/img1.jfif" alt="">
-                <p class="pdefotos">Por eso es necesario que hagan sus pedidos con un minimo de 24 hs de anticipacion</p>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="opinion">
-
-        <h2>Dejanos tu opinion</h2>
-        
-        <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <input class="submit-button" type="submit" value="Enviar">
-        </form>
-    </section>
+ 
 
     <footer id="contacto">
 
@@ -132,6 +53,7 @@
         </div>
 
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

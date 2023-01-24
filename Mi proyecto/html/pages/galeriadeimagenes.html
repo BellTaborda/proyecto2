@@ -11,62 +11,72 @@
 </head>
 <body>
     <header id="header">
-    
-        <h1  >Bienvenid@s a RodJad</h1>
-        <img class="logo" src="../img/logo.png" alt="">
-    
-        <nav class="menunavv">
-            <ul class="padreli">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li><a href="nuestrahistoria.html">Nuestra Historia</a></li>
-                <li><a href="producto.html">Productos</a></li>
-                <li>
-                    <a href="galeriadeimagenes.html">Galeria de Imagenes</a>
-                </li>
-                <li><a href="dejanostuopinion.html">Dejanos tu opinion</a></li>
-            </ul>
-        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Bienvenidos a RodJad</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="producto.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nuestrahistoria.html">Nuestra Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeriadeimagenes.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dejanostuopinion.html">Déjanos tu opinión</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     
 
-    <section class="img_bienvenida">
-        <h1 class="centrar">Bienvenidos a RodJad</h1>
+    <section>
+        <h1 class="centrar">Galería</h1>
     </section>
 
     <hr class="barra2">
 
-
-    <section id="galeria-de-imagenes" class="pink">
-        <h2>Galeria de Imagenes</h2>
-        <ul>
-            <li>
-                <article>
-                    <img src="../img/img3.jfif" alt="" height="300">   
-
-                </article>
-            </li>
-            <li>
-                <article>
-                    <img src="../img/img2.jfif" alt="" height="300">   
-
-                </article>
-            </li>
-            <li>
-                <article>
-                    <img src="../img/img4.jfif" alt="" height="300">   
-
-                </article>
-            </li>
-            <li>
-                <article>
-                    <img src="../img/img1.jfif" alt="" height="300">   
-
-                </article>
-            </li>
-        </ul>    
-
+<section #galeria>
+    <div id="carouselExampleIndicators" class="carousel slide mx-auto">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/img1.jfif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/img3.jfif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/img2.jfif" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
+        <div><h2>
+            Utilizamos la mejor materia prima
+        </h2>
+    <p>Nuestros productos son frescos y seleccionados cuidadosamente</p>
+<p>Por eso es necesario que haga su pedido con anticiopacion</p></div>
     </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
