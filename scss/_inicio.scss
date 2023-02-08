@@ -69,10 +69,8 @@
 @media screen and (min-width: $tablet){
     #contacto{
       display: inline-block;
-      display: flex;
-      flex-direction: row;
+      @include flex-row;
       gap: 5rem;
-      align-items: center;
       padding-left: 14rem;
       padding-top: 18rem;
       font-size: x-large;

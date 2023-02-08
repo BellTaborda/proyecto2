@@ -146,8 +146,8 @@ h1, h2 {
     display: inline-block;
     display: flex;
     flex-direction: row;
-    gap: 5rem;
     align-items: center;
+    gap: 5rem;
     padding-left: 14rem;
     padding-top: 18rem;
     font-size: x-large;
