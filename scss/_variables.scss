@@ -1,0 +1,22 @@
+/*screen size*/
+
+$tablet: 768px;
+$desktop: 1024px;
+
+/*Mixin*/
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Fonts*/
+
+$fuenteprincipal: 'Sofia Sans Semi Condensed', sans-serif;
+
+/*Spaces*/
+
+$smallsapace: 5rem;
+$mediumspace: 45px;
+$bigspace: 60px;

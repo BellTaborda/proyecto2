@@ -1,0 +1,31 @@
+body {
+    font-size: $fuenteprincipal;
+    color: aliceblue;
+    background: url(../img/bienvenida.jpg) no-repeat center;
+    background-size: 100% 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+    
+h1, h2 {
+    margin-bottom: $bigspace;
+    text-align: center;
+}
+
+#header {
+    grid-area: header;
+    @include flex-column;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: rgba(218, 158, 168, 0.5);
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    position: fixed;
+   }

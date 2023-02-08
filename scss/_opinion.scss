@@ -1,0 +1,25 @@
+#opinion {
+    grid-area: opinion;
+    background-color:rgb(162, 210, 255);
+   
+}
+  
+form {
+    display:flex;
+    flex-direction: column;
+}
+  
+form input, form textarea {
+    margin-bottom: 1rem;
+    max-width: 20rem;
+}
+  
+form textarea {
+    max-width: 35rem;
+}
+  
+form .submit-button {
+    max-width: $smallsapace;
+    @extend .btn
+}
+

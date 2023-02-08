@@ -1,0 +1,81 @@
+#bodyengrid {
+    display: grid;
+    grid-template-areas:  
+    "header"
+    "historia" 
+    "productos"
+    "galeria"
+    "opinion"
+    "footer"
+    ;
+    grid-template-columns: repeat(1, 1fr);
+    }
+  
+@media screen and (min-width: $tablet){
+    #bodyengrid {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "productos productos"
+        "galeria galeria"
+        "opinion opinion"
+        "contacto contacto"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1 1fr);
+    }
+}
+    
+.btnn {
+    position: absolute;
+    top: 28rem;
+}
+.btn{
+    background-color: transparent;
+}
+.btn-primary {
+  --bs-btn-border-color: white;
+  --bs-btn-active-bg: pink;
+  --bs-btn-bg: pink;
+  --bs-btn-hover-bg: pink;
+  --bs-btn-hover-border-color: black;
+}
+
+     
+@media screen and (min-width: $tablet) {
+    .btnn {
+        top: 10rem;
+    }
+    .btn {
+        --bs-btn-padding-x: 2rem;
+        --bs-btn-padding-y: 2rem;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .btnn {
+        top: 39rem;
+    }
+    .btn {
+        --bs-btn-padding-x: 2rem;
+        --bs-btn-padding-y: 2rem;
+    }
+    #contacto {
+        padding-left: 58rem;
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (min-width: $tablet){
+    #contacto{
+      display: inline-block;
+      display: flex;
+      flex-direction: row;
+      gap: 5rem;
+      align-items: center;
+      padding-left: 14rem;
+      padding-top: 18rem;
+      font-size: x-large;
+    
+    }
+}
